@@ -89,6 +89,7 @@ button:hover {
   background-color: black;
 }
 button:focus {
+  outline: none;
   background-color: rgb(255, 71, 71);
 }
 #playBtn {
