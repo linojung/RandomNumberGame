@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <form id="game">
+        <h2>Random Number Game</h2>
+        <div class="generator">
+          Generate a number between 0 and
+          <input type="number" id="generateNo" min="1" required />
+        </div>
+        <div class="guess">
+          Guess the number:
+          <input type="number" id="guessNo" min="0" max="" required />
+          <button type="submit" id="playBtn">Play!</button>
+        </div>
+        <div id="false" class="hidden">'when gssNo > genNo'</div>
+        <div id="result" class="hidden">
+          <div class="result__number">
+            <p>You chose: <span id="chosenNo">'chosenNo'</span>,</p>
+            <p>the machine chose: <span id="machineNo">'machineNo'</span>.</p>
+          </div>
+          <div class="result__game">'result'</div>
+        </div>
+        <button type="reset" id="restart" class="hidden">
+          Wanna Play Again?
+        </button>
+      </form>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
